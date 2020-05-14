@@ -1,5 +1,5 @@
 {
-  "name": "antd-theme-webpack-plugin",
+  "name": "@taruks/antd-theme-webpack-plugin",
   "version": "1.3.4",
   "description": "A webpack plugin to provide Dynamic Theme for Ant Design",
   "main": "index.js",
@@ -7,19 +7,22 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "antd-theme-generator": "^1.2.2",
+    "@taruks/antd-theme-generator": "^1.2.3",
     "customize-cra": "^0.9.1",
     "less-bundle-promise": "1.0.7",
-    "postcss": "^6.0.21",
-    "react-app-rewired": "^2.1.5"
+    "postcss": "^7.0.30",
+    "react-app-rewired": "^2.1.6"
   },
   "author": {
-    "name": "mzohaibqc",
-    "url": "https://github.com/mzohaibqc"
+    "name": "askurat",
+    "url": "https://github.com/askurat"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/mzohaibqc/antd-theme-webpack-plugin"
+    "url": "git://github.com/askurat/antd-theme-webpack-plugin"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "keywords": [
     "antd",
