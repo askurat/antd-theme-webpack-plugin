@@ -19,7 +19,7 @@
   resolved "https://registry.yarnpkg.com/@ant-design/icons-svg/-/icons-svg-4.1.0.tgz#480b025f4b20ef7fe8f47d4a4846e4fee84ea06c"
   integrity sha512-Fi03PfuUqRs76aI3UWYpP864lkrfPo0hluwGqh7NJdLhvH4iRDc3jbJqZIvRDLHKbXrvAfPPV3+zjUccfFvWOQ==
 
-"@ant-design/icons@^4.0.6", "@ant-design/icons@^4.1.0":
+"@ant-design/icons@^4.1.0":
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/@ant-design/icons/-/icons-4.1.0.tgz#444edcc3822d5b43b2b038d6f893cd7f7dfcc48d"
   integrity sha512-R1aIPJboGq4nVYwW7s0v/V2g6yiY27Kec5ldfK3mWHskw7bihPOKwxkHbITuSJcVNJsSvA6LNMlKZoY1u8DIKQ==
@@ -52,14 +52,14 @@
   resolved "https://registry.yarnpkg.com/@icons/material/-/material-0.2.4.tgz#e90c9f71768b3736e76d7dd6783fc6c2afa88bc8"
   integrity sha512-QPcGmICAPbGLGb6F/yNf/KzKqvFx8z5qx3D1yFqVAjoFmXK35EgyW+cJ57Te3CNsmzblwtzakLGFqHPqrfb4Tw==
 
-"@taruks/antd-theme-generator@^1.2.3":
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/@taruks/antd-theme-generator/-/antd-theme-generator-1.2.3.tgz#a7a8cb46511bf43d04eee078719d1f5dff2e8ba5"
-  integrity sha512-ZJ7hXE+5amAWS8BGV5o4H4NwUQJuD+2e3FEgqwrOX+6LMj/+ipNuvp3dJChd5bBMw6zlsueUMdhTA+GMxHD1HA==
+"@taruks/antd-theme-generator@^2.0.0", "@taruks/antd-theme-generator@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@taruks/antd-theme-generator/-/antd-theme-generator-2.0.1.tgz#3c29308f001f3e1d228db70fd5b3f2d3798f8ed0"
+  integrity sha512-FjTe4Lpq0tQWbbOlGXmx1R+EwxU4J9iySSAOhMpv+a43JOQB7HHKZmROgsKAat1H2hdvTolO4rgca6o/dkqgxQ==
   dependencies:
     "@ant-design/icons" "^4.1.0"
+    "@taruks/antd-theme-generator" "^2.0.0"
     antd "^4.2.2"
-    antd-theme-generator "^1.2.2"
     glob "^7.1.6"
     hash.js "^1.1.7"
     less "^3.11.1"
@@ -102,24 +102,7 @@ ansi-styles@^3.2.1:
   dependencies:
     color-convert "^1.9.0"
 
-antd-theme-generator@^1.2.1, antd-theme-generator@^1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/antd-theme-generator/-/antd-theme-generator-1.2.2.tgz#a289373c075096d9b9f84f78f2436119278a474c"
-  integrity sha512-C5vICdA/GJgoru2obKhD4NVjpdB//XQAlEDBgbgY04fXWvSwykPbpqECncD1yV5DsM1ZS0xfnDOQBvTAXydUfA==
-  dependencies:
-    "@ant-design/icons" "^4.0.6"
-    antd "^4.1.5"
-    antd-theme-generator "^1.2.1"
-    glob "^7.1.3"
-    hash.js "^1.1.5"
-    less "^3.9.0"
-    less-bundle-promise "1.0.7"
-    less-plugin-npm-import "^2.1.0"
-    postcss "^6.0.21"
-    postcss-colors-only "0.0.3"
-    react-color "^2.18.0"
-
-antd@^4.1.5, antd@^4.2.2:
+antd@^4.2.2:
   version "4.2.2"
   resolved "https://registry.yarnpkg.com/antd/-/antd-4.2.2.tgz#223ea6b3b3b5ce1a47d390f271c1b145ea9c5c15"
   integrity sha512-X+b6LfcuF+jR1VyGahvnYtER9BmjrKXW9xCCmHkVrMK5G84eeptbzxy0N3s58dWcpvyUJNmzTrf/EOsUtR05kg==
@@ -260,7 +243,7 @@ chalk@^1.1.3:
     strip-ansi "^3.0.0"
     supports-color "^2.0.0"
 
-chalk@^2.4.1, chalk@^2.4.2:
+chalk@^2.4.2:
   version "2.4.2"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.4.2.tgz#cd42541677a54333cf541a49108c1432b44c9424"
   integrity sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ==
@@ -451,7 +434,7 @@ getpass@^0.1.1:
   dependencies:
     assert-plus "^1.0.0"
 
-glob@^7.1.3, glob@^7.1.6:
+glob@^7.1.6:
   version "7.1.6"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.6.tgz#141f33b81a7c2492e125594307480c46679278a6"
   integrity sha512-LwaxwyZ72Lk7vZINtNNrywX0ZuLyStrdDtabefZKAY5ZGJhVtgdznluResxNmPitE0SAO+O26sWTHeKSI2wMBA==
@@ -502,7 +485,7 @@ has-flag@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/has-flag/-/has-flag-3.0.0.tgz#b5d454dc2199ae225699f3467e5a07f3b955bafd"
 
-hash.js@^1.1.5, hash.js@^1.1.7:
+hash.js@^1.1.7:
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/hash.js/-/hash.js-1.1.7.tgz#0babca538e8d4ee4a0f8988d68866537a003cf42"
   integrity sha512-taOaskGt4z4SOANNseOviYDvjEJinIkRgmp7LbKP2YTTmVxWBl87s/uzK9r+44BclBSp2X7K1hqeNfz9JbBeXA==
@@ -619,7 +602,7 @@ less-plugin-npm-import@^2.1.0:
     promise "~7.0.1"
     resolve "~1.1.6"
 
-less@^3.11.1, less@^3.9.0:
+less@^3.11.1:
   version "3.11.1"
   resolved "https://registry.yarnpkg.com/less/-/less-3.11.1.tgz#c6bf08e39e02404fe6b307a3dfffafdc55bd36e2"
   integrity sha512-tlWX341RECuTOvoDIvtFqXsKj072hm3+9ymRBe76/mD6O5ZZecnlAOVDlWAleF2+aohFrxNidXhv2773f6kY7g==
@@ -764,15 +747,6 @@ postcss@^5.0.2:
     js-base64 "^2.1.9"
     source-map "^0.5.6"
     supports-color "^3.2.3"
-
-postcss@^6.0.21:
-  version "6.0.23"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-6.0.23.tgz#61c82cc328ac60e677645f979054eb98bc0e3324"
-  integrity sha512-soOk1h6J3VMTZtVeVpv15/Hpdl2cBLX3CAw4TAbkpTJiNPk9YP/zWcD1ND+xEtvyuuvKzbxliTOIyvkSeSJ6ag==
-  dependencies:
-    chalk "^2.4.1"
-    source-map "^0.6.1"
-    supports-color "^5.4.0"
 
 postcss@^7.0.30:
   version "7.0.30"
@@ -1145,7 +1119,7 @@ react-app-rewired@^2.1.6:
   dependencies:
     semver "^5.6.0"
 
-react-color@^2.18.0, react-color@^2.18.1:
+react-color@^2.18.1:
   version "2.18.1"
   resolved "https://registry.yarnpkg.com/react-color/-/react-color-2.18.1.tgz#2cda8cc8e06a9e2c52ad391a30ddad31972472f4"
   integrity sha512-X5XpyJS6ncplZs74ak0JJoqPi+33Nzpv5RYWWxn17bslih+X7OlgmfpmGC1fNvdkK7/SGWYf1JJdn7D2n5gSuQ==
@@ -1298,13 +1272,6 @@ supports-color@^3.2.3:
 supports-color@^5.3.0:
   version "5.4.0"
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-5.4.0.tgz#1c6b337402c2137605efe19f10fec390f6faab54"
-  dependencies:
-    has-flag "^3.0.0"
-
-supports-color@^5.4.0:
-  version "5.5.0"
-  resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-5.5.0.tgz#e2e69a44ac8772f78a1ec0b35b689df6530efc8f"
-  integrity sha512-QjVjwdXIt408MIiAqCX4oUKsgU2EqAGzs2Ppkm4aQYbjm+ZEWEcW4SfFNTr4uMNZma0ey4f5lgLrkB0aX0QMow==
   dependencies:
     has-flag "^3.0.0"
 
