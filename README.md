@@ -50,7 +50,7 @@ Add this plugin in `plugins` array.
 - Default styles main file path
   - /src/styles/index.less
 - Default Theme variables (that can be updated in browser)
-  - example: { dark: true, compact: true, custom: { @primary: '#1890ff' } }. This will produce 3 json files, defaultVars, darkVars, and compactVars to be used by less.modifyVars.
+  - example: { dark: true, compact: true, custom: { @primary: '#1890ff' } }. This will produce 3 json files, defaultVars, darkVars, and compactVars, in your styles directory. They can be used by less.modifyVars.
 - generateOnce: false
   - if you don't want to generate color.less on each chnage in code to make build process fast in development mode, assign it `true` value. But if you have new changes in your styles, you need to re-run your build process `npm start`.
 - customColorRegexArray: [/^fade\(.*\)$/]
