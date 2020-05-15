@@ -116,6 +116,12 @@ module.exports = function override(config, env) {
 };
 ```
 
+There will also be theme variable json files created for each theme. For example: 
+```
+{ dark: true, compact: true, custom: { @primary: '#1890ff' } }
+```
+This will produce 3 json files, defaultVars, darkVars, and compactVars, in your styles directory. They can be used by less.modifyVars.
+
 ## Configurations using customize-cra
 https://github.com/mzohaibqc/antd-theme-webpack-plugin/blob/master/examples/customize-cra/config-overrides.js
 
