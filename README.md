@@ -12,17 +12,17 @@ https://antd-live-theme.firebaseapp.com/
 In order to integrate with your webpack configurations, install the package and add following code in your webpack config file.
 
 ## Install
-  - npm install -D antd-theme-webpack-plugin
+  - npm install -D @taruks/antd-theme-webpack-plugin
 
 ```js
-const AntDesignThemePlugin = require('antd-theme-webpack-plugin');
+const AntDesignThemePlugin = require('@taruks/antd-theme-webpack-plugin');
 
 const options = {
   antDir: path.join(__dirname, './node_modules/antd'),
   stylesDir: path.join(__dirname, './src/styles'),
   varFile: path.join(__dirname, './src/styles/variables.less'),
   mainLessFile: path.join(__dirname, './src/styles/index.less'),
-  themeVariables: ['@primary-color'],
+  themeVariables: { custom: {} }, // can use { dark: true, compact: true } for Antd themes. All them variables will be merged.
   indexFileName: 'index.html',
   generateOnce: false,
   lessUrl: "https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js",
@@ -50,7 +50,7 @@ Add this plugin in `plugins` array.
 - Default styles main file path
   - /src/styles/index.less
 - Default Theme variables (that can be updated in browser)
-  - ['@primary-color']
+  - example: { dark: true, compact: true, custom: { @primary: '#1890ff' } }. This will produce 3 json files, defaultVars, darkVars, and compactVars to be used by less.modifyVars.
 - generateOnce: false
   - if you don't want to generate color.less on each chnage in code to make build process fast in development mode, assign it `true` value. But if you have new changes in your styles, you need to re-run your build process `npm start`.
 - customColorRegexArray: [/^fade\(.*\)$/]
@@ -125,14 +125,3 @@ https://mzohaibqc.github.io/antd-theme-webpack-plugin/index.html
 
 And here is code for this demo
 https://github.com/mzohaibqc/antd-theme-webpack-plugin/tree/master/examples/customize-cra
-
-Note: you don't necessarily
-
-# Changes
-
-## [1.3.1] - 2020-01-10 (latest)
-- Added a custom option, an array of regex to allow your custom color codes to match like `fade(@primary-color, 20%)`
-
-## v1.1.8
-- Added support for webpack specific less imports so you can now import like this `@import "~antd/lib/style/themes/default.less";` instead of `@import "../../node_modules/antd/lib/style/themes/default.less";`
-- Added cache mechanism to avoid generation of color.less incase of same css/less source.
