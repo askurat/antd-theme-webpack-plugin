@@ -52,10 +52,27 @@
   resolved "https://registry.yarnpkg.com/@icons/material/-/material-0.2.4.tgz#e90c9f71768b3736e76d7dd6783fc6c2afa88bc8"
   integrity sha512-QPcGmICAPbGLGb6F/yNf/KzKqvFx8z5qx3D1yFqVAjoFmXK35EgyW+cJ57Te3CNsmzblwtzakLGFqHPqrfb4Tw==
 
-"@taruks/antd-theme-generator@^2.0.0", "@taruks/antd-theme-generator@^2.0.1":
+"@taruks/antd-theme-generator@^2.0.0":
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/@taruks/antd-theme-generator/-/antd-theme-generator-2.0.1.tgz#3c29308f001f3e1d228db70fd5b3f2d3798f8ed0"
   integrity sha512-FjTe4Lpq0tQWbbOlGXmx1R+EwxU4J9iySSAOhMpv+a43JOQB7HHKZmROgsKAat1H2hdvTolO4rgca6o/dkqgxQ==
+  dependencies:
+    "@ant-design/icons" "^4.1.0"
+    "@taruks/antd-theme-generator" "^2.0.0"
+    antd "^4.2.2"
+    glob "^7.1.6"
+    hash.js "^1.1.7"
+    less "^3.11.1"
+    less-bundle-promise "1.0.7"
+    less-plugin-npm-import "^2.1.0"
+    postcss "^7.0.30"
+    postcss-colors-only "0.0.3"
+    react-color "^2.18.1"
+
+"@taruks/antd-theme-generator@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@taruks/antd-theme-generator/-/antd-theme-generator-2.1.0.tgz#309ddff33631d865115ef722f507b89eee764533"
+  integrity sha512-PsvVYiKbNNQdQv1v6if4wtEwjDDqeOCWAYS9eY2oU48b7QBq0z9yvcdpUJnEcTDCsLoMrdmnovUh9jJ23V1dxw==
   dependencies:
     "@ant-design/icons" "^4.1.0"
     "@taruks/antd-theme-generator" "^2.0.0"

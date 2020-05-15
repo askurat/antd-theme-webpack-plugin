@@ -22,7 +22,7 @@ const options = {
   stylesDir: path.join(__dirname, './src/styles'),
   varFile: path.join(__dirname, './src/styles/variables.less'),
   mainLessFile: path.join(__dirname, './src/styles/index.less'),
-  themeVariables: { custom: {} }, // can use { dark: true, compact: true } for Antd themes. All them variables will be merged.
+  themeVariables: { dark: true, compact: true }, // can use { dark: true, compact: true } for Antd themes. All them variables will be merged.
   indexFileName: 'index.html',
   generateOnce: false,
   lessUrl: "https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js",
@@ -50,7 +50,7 @@ Add this plugin in `plugins` array.
 - Default styles main file path
   - /src/styles/index.less
 - Default Theme variables (that can be updated in browser)
-  - example: { dark: true, compact: true, custom: { @primary: '#1890ff' } }. This will produce 3 json files, defaultVars, darkVars, and compactVars, in your styles directory. They can be used by less.modifyVars.
+  - example: { dark: true, compact: true }. This will produce 3 json files, defaultVars, darkVars, and compactVars, in your styles directory. They can be used by less.modifyVars.
 - generateOnce: false
   - if you don't want to generate color.less on each chnage in code to make build process fast in development mode, assign it `true` value. But if you have new changes in your styles, you need to re-run your build process `npm start`.
 - customColorRegexArray: [/^fade\(.*\)$/]
@@ -118,7 +118,7 @@ module.exports = function override(config, env) {
 
 There will also be theme variable json files created for each theme. For example: 
 ```
-{ dark: true, compact: true, custom: { @primary: '#1890ff' } }
+{ dark: true, compact: true }
 ```
 This will produce 3 json files, defaultVars, darkVars, and compactVars, in your styles directory. They can be used by less.modifyVars.
 
